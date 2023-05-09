@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--linha opcional sobre navegadores padrão-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--determina a responsividade inicial-->
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@500&display=swap');
+    </style>
 </head>
-<body>
+<body style="background-color: azure;">
     <ul>
         <li>
-            <a href="index.html">Home</a>
+            <a class="navbar" href="index.html">Home</a>
         </li>
         <li>
-            <a href="contato.html">Contato</a>
+            <a class="navbar" href="contato.html">Contato</a>
         </li>
     </ul>
-    <div id="julianalopes">
+    <div id="julianaLopes">
     <h1>Sobre Juliana Lopes</h1>
     <h2>Desenvolvedora full-stack</h2>
-    <img src="https://github.com/julianalopesco.png" alt="foto de perfil github">
+    <img id="fotoPerfil" src="https://github.com/julianalopesco.png" alt="foto de perfil github">
     </div>
+    <div id="textoSobre">
     <p>28 anos, formada em Negócios da Moda na Universidade Anhembi Morumbi, e buscando a segunda graduação em Análise e Desenvolvimento de Sistemas na UniAmérica/Descomplica. 
     </p>
     <p>Talvez pareça desconexo, mas essa minha primeira experiência me trouxe habilidades em comunicação, pesquisa, e tenho uma forte organização e orientação a resultados, porque já tive meu próprio negócio no segmento. 
@@ -28,13 +35,34 @@
     </p>
     <p>Tenho conhecimento em stacks tanto de front como back end, além de conhecer ferramentas de design como Adobe Photoshop, Ilustrator, Figma e de negócio como marketing digital, produção de conteúdo e UX Research. As principais ferramentas e linguagens que conheço são Java, MYSQL, trabalhando o backend com banco de dados e lógica de programação, e o front end com HTML, CSS, JavaScript, projetando telas responsivas e levando em consideração a experiência do usuário 
     </p>
-    <h2>Minha receita de sopa de cebola preferida</h2>
+   </div>
+   <div id="video">
+    <h2 style=" margin-top: 50px; margin-bottom: 10px;">Vídeo Pitch:</h2>
     <!--iframe: implementa parte de outro site no código atual-->
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/XDG1RI_0YGA" 
-    title="YouTube video player" frameborder="10" 
-    allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/92ROBtzkaA4" 
+    title="YouTube video player" frameborder="0" allow="accelerometer;
+     autoplay; clipboard-write; encrypted-media; gyroscope; 
+     picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+        <a class="linkIcon" href="https://github.com/julianalopesco" target="_blank">
+            <img class="favicon" src="assets/img/github.png" alt="logo do github">
+        </a>
+        <a class="linkIcon" href="https://www.linkedin.com/in/julianalopesco/" target="_blank">
+            <img class="favicon" src="assets/img/linkedin.png" alt="logo do linkedin">
+        </a>
+        <a class="linkIcon" href="mailto:julianalopesmf@gmail.com" target="_blank">
+            <img class="favicon" src="assets/img/gmail.png" alt="logo do gmail">
+        </a>
+           
+    </div>
+
+    <!--Rodapé da página-->
+    <hr>
+    <footer>
+        <span id="rodape">Todos os direitos reservados: Juliana Lopes &copy 2023
+        </span>
+    </footer>
 </body>
 </html>
