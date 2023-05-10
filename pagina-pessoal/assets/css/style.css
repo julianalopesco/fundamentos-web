@@ -128,8 +128,14 @@ form {
     align-items: center;
     justify-content: center;
     padding:30px;
+    border-radius: 8px;
 }
 
+textarea {
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    font-size: .9rem;
+}
 #formulario {
     display: flex;
     flex-direction: column;
@@ -140,13 +146,15 @@ form {
     font-family: roboto;
     color: white;
     font-size: 20px;
+    
 }
 
 label, input, textarea {
     padding: 10px;
-  }
+    border-radius: 8px;
+}
 
-  button {
+button {
     background-color: white;
     color: rgb(12, 12, 12);
     font-size: 16px;
@@ -155,11 +163,11 @@ label, input, textarea {
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #001b48;
     cursor: pointer;
     color:white;
     border: 3px solid white; 
-  }
+}

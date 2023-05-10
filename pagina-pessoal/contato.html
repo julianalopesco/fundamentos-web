@@ -19,13 +19,27 @@
     <h1 id="tituloContato">Entre em contato comigo</h1>
     <div class="container">
     <form id="formulario" action="">
+        <div class="campos-form">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome"> 
+        <input id="nome" onkeyup="validaNome()" type="text" placeholder="Insira seu nome aqui"> 
+        <div id="txtNome"></div>
+        </div>
+
+        <div class="campos-form">
         <label for="email">E-Mail:</label>
-        <input type="email" id="email">
+        <input type="email" id="email" class="email2" onkeyup="validaEmail()"placeholder="Exemplo: email@provedor.com">
+        <div id="txtEmail"></div>
+        </div>
+
+        <div class="campos-form">
         <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="40" rows="10"></textarea>
-        <button>ENVIAR</button>
+        <textarea name="assunto" id="assunto" rows="5" onkeyup="validaAssunto()" placeholder="Digite sua mensagem aqui"></textarea>
+        <div id="txtAssunto"></div>
+        </div>
+
+        <button onclick="enviar()">
+            ENVIAR
+        </button>
     </form>
     </div>
     <hr>
@@ -34,5 +48,13 @@
             Todos os direitos reservados: Juliana Lopes &copy 2023
         </span>
     </footer>
+
+    <!--Incorporando javascript dentro do html-->
+    <!--<script type="text/javascript">
+        alert("Hello world!")
+    </script>-->
+
+    <!--Usando javascript de um arquivo externo-->
+    <script src="./assets/script/script.js"></script>
 </body>
 </html>
